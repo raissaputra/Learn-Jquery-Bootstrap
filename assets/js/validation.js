@@ -1,10 +1,11 @@
-$(ducument).ready(function () {
+$(document).ready(function () {
   $("#pendaftaran").submit(function (event) {
     var fname = $("#firstname").val();
     var lname = $("lastname").val();
 
     // panggil fungsi
     val_name(fname, event, "#firstname-error");
+    val_name(lname, event, "#lastname-error");
   });
 
   function val_name(name, event, error) {
